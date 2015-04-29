@@ -1,0 +1,25 @@
+id: 191131-abcd
+specversion: 0.0.1-alpha
+
+metadata:
+    name: my-app
+    appversion: 1
+    description: blah blah blah
+    summary: blah blah
+    authors:
+        - Tomas Radej <tradej@redhat.com>
+        - Vaclav Pavlin <vpavlin@redhat.com>
+    license:
+        name: Apache 2.0
+        url: http://www.example.com/license
+    devassistant:
+        assistants: [ crt, twk ]
+
+graph:
+    somedb:
+        source: docker://registry.example.com/some/database
+
+requirements:
+- persistentVolume:
+    name: myVol1
+    size: 2.0
