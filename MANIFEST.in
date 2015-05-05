@@ -1,2 +1,6 @@
-include README.rst
+include README.md
 include LICENSE
+include validate.py
+
+recursive-include test *
+recursive-include spec *
