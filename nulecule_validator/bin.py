@@ -41,5 +41,5 @@ def main():
         sys.exit(0)
 
     for error in errors:
-        print('{path}: {msg}'.format(path=' > '.join(error.path), msg=error.message))
+        print('{path}: {msg}'.format(path=' > '.join([str(item) for item in error.path]), msg=error.message))
     sys.exit(1)
